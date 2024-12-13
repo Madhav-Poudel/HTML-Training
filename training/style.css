@@ -1,0 +1,42 @@
+
+/* group-selector */
+
+h1, h2, h3 {
+    color: green;
+    background-color: black;
+}
+
+/* Class Selector */
+.para{
+    color: aqua;
+    background-color: blueviolet;
+}
+
+/* ID Selector */
+#idselect{
+    color: aqua;
+    background-color: blueviolet;   
+}
+
+
+/* Class Selector */
+
+.multipleSelect{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+
+}
+
+/* Descendant Selector */
+div section b {
+    color: green;
+    background-color: black;
+}
+
+/* child selector */
+.parent > p {
+    color: red;
+    background-color: black;
+}

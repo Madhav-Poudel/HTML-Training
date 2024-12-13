@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Iframe Example</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenging Iframe Assignment</title>
+</head>
+<body>
+    <h2>Choose Content to View</h2>
+    <p>Click on the links below to load different content into the respective viewers.</p>
+
+    <h3>Primary Viewer</h3>
+    <iframe src="" name="primary-frame" width="600" height="400" frameborder="1"></iframe>
+    <br>
+    <a href="./images/image.jpg" target="primary-frame">View Image</a> |
+    <a href="./images/video.mp4" target="primary-frame">View Video</a> |
+    <a href="./Chapter-1.pdf" target="primary-frame">View PDF Document</a> |
+    <a href="./index copy.html" target="primary-frame">View HTML Document</a>
+
+    <h3>Secondary Viewer</h3>
+    <iframe src="" name="secondary-frame" width="300" height="300" frameborder="1"></iframe>
+    <br>
+    <a href="./images/image.jpg" target="secondary-frame">View Secondary Image</a> |
+    <a href="./images/video.mp4" target="secondary-frame">View Secondary Video</a>
+
+    <h3>Nested Viewer</h3>
+    <iframe src="./index.html" name="nested-frame" width="800" height="200" frameborder="1"></iframe>
+    <p>This nested viewer always shows the 'index copy.html' content.</p>
+
+    <h2>Multi-purpose Section</h2>
+    <p>Click the links below to load either a PDF or an image into a different frame.</p>
+    <iframe src="" name="multi-purpose-frame" width="400" height="300" frameborder="1"></iframe>
+    <br>
+    <a href="./Chapter-1.pdf" target="multi-purpose-frame">Load PDF</a> |
+    <a href="./images/image.jpg" target="multi-purpose-frame">Load Image</a>
+</body>
+</html>

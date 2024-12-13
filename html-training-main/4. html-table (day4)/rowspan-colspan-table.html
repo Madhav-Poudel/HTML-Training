@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Example of Rowspan and Colspan -->
+    <h2 style="text-align: center;">First Example</h2>
+    <table border="1" style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>English</td>
+            <td>History</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>SOcial</td>
+        </tr>
+    </table>
+    <h2 style="text-align: center;">Second Example</h2>
+    <table border="1"
+        style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto; text-align: center;">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <td rowspan="3">D</td>
+            <td colspan="2">E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td rowspan="2">G</td>
+            <td rowspan="2">H</td>
+            <td rowspan="2">I</td>
+        </tr>
+        <tr>
+            <td colspan="2">J</td>
+        </tr>
+        <tr>
+            <td colspan="3">K</td>
+            <td>L</td>
+            <td colspan="2">M</td>
+        </tr>
+    </table>
+</body>
+
+</html>
