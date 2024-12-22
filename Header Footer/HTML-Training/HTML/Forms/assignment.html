@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Types Assignment</title>
+</head>
+<body>
+    <h1>HTML Input Types Assignment</h1>
+    <p>This assignment is designed to showcase and experiment with advanced HTML input types. Complete the form below and observe the behavior of various elements.</p>
+
+    <form action="/form" method="get">
+        <!-- Text Input with Validation -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" pattern="^[a-zA-Z0-9]{5,15}$" placeholder="Enter your username" required>
+        <p>(5-15 characters, letters and numbers only)</p>
+        <br><br>
+
+        <!-- Password with Validation -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
+        <small>(Minimum 8 characters)</small>
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <!-- Date and Time Inputs -->
+        <label for="appointment">Appointment Date and Time:</label>
+        <input type="datetime-local" id="appointment" name="appointment">
+        <br><br>
+
+        <!-- Range Input with Visual Output -->
+        <label for="range">Select Range (0-100):</label>
+        <input type="range" id="range" name="range" min="0" max="100" step="10">
+        <br><br>
+
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+                <option value="us">United States</option>
+                <option value="canada">Canada</option>
+                <option value="nepal">Nepal</option>
+                <option value="india" disabled>India</option>
+        </select>
+        <br><br>
+
+        <!-- Multi-line Text Input with Character Limit -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" maxlength="200" placeholder="Enter your comments here (max 200 characters)..."></textarea>
+        <br><br>
+
+        <!-- Radio Buttons Group -->
+        <p>Preferred Contact Method:</p>
+        <input type="radio" id="email_contact" name="contact" value="email">
+        <label for="email_contact">Email</label>
+        <br>
+        <input type="radio" id="phone_contact" name="contact" value="phone">
+        <label for="phone_contact">Phone</label>
+        <br>
+        <input type="radio" id="none_contact" name="contact" value="none">
+        <label for="none_contact">None</label>
+        <br><br>
+
+        <!-- Checkboxes Group with Description -->
+        <p>Skills:</p>
+        <input type="checkbox" id="html" name="skill" value="HTML">
+        <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" id="css" name="skill" value="CSS">
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" id="js" name="skill" value="JavaScript">
+        <label for="js">JavaScript</label>
+        <br><br>
+
+        <!-- File Upload with Notes -->
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        <small>(Only .pdf, .doc, or .docx files are allowed)</small>
+        <br><br>
+
+        <!-- Color Picker -->
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <br><br>
+        
+        <!-- Submit and Reset Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

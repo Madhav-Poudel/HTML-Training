@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+</head>
+
+<body>
+    <form>
+        <label for="fullName"><b>Full Name:</b></label>
+        &nbsp;&nbsp;&nbsp;<input type="text" id="full-name" placeholder="Enter full name">
+        <br><br>
+        <label for="email"><b>Email:</b></label>
+        &nbsp;&nbsp;&nbsp;<input type="text" id="email" placeholder="Enter your email">
+        <br><br>
+        <label for="mobileNumber"><b>Mobile Number:</b></label>
+        <input type="number" id="mobileNumber" placeholder="Enter your mobile number"><br><br>
+
+        <label for="password"><b>Password:</b></label>
+        &nbsp;&nbsp;&nbsp;<input type="password" id="password" placeholder="Enter your password"><br><br>
+
+
+        <label for="file"><b>Choose Image:</b></label>
+        &nbsp;&nbsp;&nbsp;<input type="file" id="file"><br><br>
+
+        <label for=" genderSelection"><b>Select Gender:</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;<select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select> <br><br>
+
+        <label for="chooseStream"><b>Choose Stream:</b></label>
+        <input type="radio" name="stream-selection" id="csit" value="csit">
+        <label for="csit">CSIT</label>
+
+        <input type="radio" name="stream-selection" id="bca" value="bca">
+        <label for="bca">BCA</label>
+        <br><br>
+
+        <label for="chooseHobbies"><b>Choose Hobbies:</b></label>
+        <input type="checkbox" id="sports" value="sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="photography" value="photography">
+        <label for="photography">Photography</label>
+
+        <input type="checkbox" id="adventure" value="adventure">
+        <label for="adventure">Adventure</label>
+        <br><br>
+
+        <label for="description"><b>Enter Description:</b></label> <br>
+        <textarea name="description" id="" cols="30" rows="5" placeholder="Enter your description"></textarea>
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <hr>
+    
+
+    <form action="/form" method="post">
+        <!-- Section 1: Personal Information -->
+        <h2>Step 1: Personal Information</h2>
+        
+
+        <!-- Full Name -->
+        <label for="full-name">Full Name:</label><br>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+        <br><br>
+
+        <!-- Username -->
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Choose a username"  title="5-15 alphanumeric characters only" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" minlength="8" required>
+        <small>(Must be at least 8 characters long)</small>
+        <br><br>
+
+        <!-- Confirm Password -->
+        <label for="confirm-password">Confirm Password:</label><br>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="10-digit phone number" required>
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <!-- Gender -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+            <hr>
+        <!-- Section 2: Address Details -->
+        <h2>Step 2: Address Details</h2>
+
+        <!-- Street Address -->
+        <label for="street">Street Address:</label><br>
+        <input type="text" id="street" name="street" placeholder="Enter your street address" required>
+        <br><br>
+
+        <!-- City -->
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+        <br><br>
+
+        <!-- State/Province -->
+        <label for="state">State/Province:</label><br>
+        <input type="text" id="state" name="state" placeholder="Enter your state or province" required>
+        <br><br>
+
+        <!-- Country -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="us">United States</option>
+            <option value="canada">Canada</option>
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="uk">United Kingdom</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <!-- Zip Code -->
+        <label for="zip">Zip Code:</label><br>
+        <input type="number" id="zip" name="zip" placeholder="Enter your zip code" title="5-digit zip code" required>
+        <br><br>
+        <hr>
+        <!-- Section 3: Preferences and Skills -->
+        <h2>Step 3: Preferences and Skills</h2>
+
+        <!-- Hobbies -->
+        <p>Hobbies:</p>
+        <input type="checkbox" id="reading" name="hobby" value="Reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="traveling" name="hobby" value="Traveling">
+        <label for="traveling">Traveling</label><br>
+        <input type="checkbox" id="sports" name="hobby" value="Sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="hobby" value="Music">
+        <label for="music">Music</label>
+        <br><br>
+
+        <!-- Skills -->
+        <p>Skills:</p>
+        <input type="checkbox" id="html" name="skill" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="skill" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="js" name="skill" value="JavaScript">
+        <label for="js">JavaScript</label><br>
+        <input type="checkbox" id="python" name="skill" value="Python">
+        <label for="python">Python</label>
+        <br><br>
+
+        <!-- Preferred Contact Method -->
+        <label for="contact-method">Preferred Contact Method:</label><br>
+        <select id="contact-method" name="contact-method" required>
+            <option value="">Select</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="postal-mail">Postal Mail</option>
+        </select>
+        <br><br>
+        <hr>
+        <!-- Section 4: Additional Details -->
+        <h2>Step 4: Additional Details</h2>
+
+        <!-- Upload Profile Picture -->
+        <label for="profile-picture">Upload Profile Picture:</label><br>
+        <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+        <br><br>
+
+        <!-- Resume Upload -->
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        <small>(Only .pdf, .doc, or .docx files allowed)</small>
+        <br><br>
+
+        <!-- Bio -->
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50" maxlength="300" placeholder="Tell us about yourself (max 300 characters)..."></textarea>
+        <br><br>
+
+        <!-- Favorite Color -->
+        <label for="favcolor">Favorite Color:</label><br>
+        <input type="color" id="favcolor" name="favcolor">
+        <br><br>
+
+        <!-- Terms and Conditions -->
+        <p>Agree to Terms and Conditions:</p>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+        <br><br>
+
+        <!-- Submit and Reset Buttons -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

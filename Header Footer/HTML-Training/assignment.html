@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex HTML Page Example</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <table width="100%" border="1" cellpadding="10" cellspacing="0">
+        <tr bgcolor="#FFA500">
+            <td align="center">
+                <h1>HTML Features Showcase</h1>
+                <p>Exploring HTML elements with a structured layout</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Navigation Section -->
+    <h2 align="center">Navigation</h2>
+    <p align="center">
+        <a href="#section1">Text Formatting</a> | 
+        <a href="#section2">Lists</a> | 
+        <a href="#section3">Media</a> | 
+        <a href="#section4">Table Example</a> | 
+        <a href="#section5">Frames and Iframes</a>
+    </p>
+
+    <!-- Text Formatting -->
+    <h2 id="section1">1. Text Formatting</h2>
+    <p><b><u><i>This text combines bold, underline, and italic formatting.</i></u></b></p>
+    <p>Superscript: E = mc<sup>2</sup> and Subscript: H<sub>2</sub>O</p>
+    <blockquote>
+        "This is an example of a blockquote element for emphasizing quotes." 
+        — <b>Albert Einstein</b>
+    </blockquote>
+
+    <!-- Lists -->
+    <h2 id="section2">2. Listing Methods</h2>
+    <h3>Nested List Example:</h3>
+    <ul>
+        <li>Frontend Technologies
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>Backend Technologies
+            <ul>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>PHP</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Custom List Symbols:</h3>
+    <ol type="A">
+        <li>Point A</li>
+        <li>Point B</li>
+        <li>Point C</li>
+    </ol>
+
+    <!-- Media -->
+    <h2 id="section3">3. Media Elements</h2>
+    <h3>Responsive Image Example:</h3>
+    <p>
+        <img src="https://via.placeholder.com/800x300" alt="Example Image" width="100%" height="auto">
+    </p>
+    <h3>Video Example:</h3>
+    <video width="600" height="400" controls>
+        <source src="example.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h3>Audio Example:</h3>
+    <audio controls>
+        <source src="example.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Table -->
+    <h2 id="section4">4. Advanced Table Example</h2>
+    <table border="1" width="100%" cellpadding="5" cellspacing="0">
+        <caption><b>Student Performance</b></caption>
+        <thead bgcolor="#FFA500">
+            <tr>
+                <th rowspan="2">Student Name</th>
+                <th colspan="3">Subjects</th>
+                <th rowspan="2">Average</th>
+            </tr>
+            <tr>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>85</td>
+                <td>78</td>
+                <td>92</td>
+                <td>85.0</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>88</td>
+                <td>91</td>
+                <td>84</td>
+                <td>87.7</td>
+            </tr>
+        </tbody>
+        <tfoot bgcolor="#FFA500">
+            <tr>
+                <td colspan="5" align="center"><b>End of Data</b></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Frames and Iframes -->
+    <h2 id="section5">5. Frames and Iframes</h2>
+    <h3>Iframe Example:</h3>
+    <p>Embedded Wikipedia:</p>
+    <iframe src="https://www.wikipedia.org" width="600" height="400" title="Wikipedia Iframe"></iframe>
+
+    <h3>Frameset Example:</h3>
+    <p>Simulating a split screen layout:</p>
+    <frameset cols="50%,50%">
+        <frame src="https://www.example.com" title="Example 1">
+        <frame src="https://www.google.com" title="Example 2">
+    </frameset>
+    
+    <!-- Footer Section -->
+    <hr>
+    <p align="center">&copy; 2024 Advanced HTML Features Showcase | All Rights Reserved.</p>
+</body>
+</html>
